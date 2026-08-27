@@ -1,0 +1,12 @@
+All-15-snapshot POD audit
+Same per-case jump normalization in physical and registered coordinates
+
+Field     Coordinate      E1 (%)   E1:2 (%)  E1:3 (%)  N99
+Rho       x_physical        78.922     88.467     93.762    8
+Rho       xi_jump           97.986     99.182     99.865    2
+U         x_physical        70.093     82.029     88.765    8
+U         xi_jump           94.691     98.856     99.476    3
+Pressure  x_physical        77.768     87.258     93.193    8
+Pressure  xi_jump           97.743     98.990     99.813    3
+Mach      x_physical        69.887     82.887     90.053    8
+Mach      xi_jump           95.297     98.773     99.509    3

@@ -1,0 +1,31 @@
+Figures 6 and 9: internally consistent N_s=15 regeneration
+==========================================================
+
+N_s = 15
+Selected files:
+  P=15.dat
+  P=16.dat
+  P=18.dat
+  P=19.dat
+  P=20.dat
+  P=22.dat
+  P=23.dat
+  P=24.dat
+  P=25.dat
+  P=26.dat
+  P=27.dat
+  P=28.dat
+  P=29.dat
+  P=30.dat
+  P=33.dat
+
+Centerline POD spectrum:
+  x_physical: E1=78.92%, E12=88.47%, N95=4, N99=8, N99.5=9
+  d_unscaled: E1=91.55%, E12=98.86%, N95=2, N99=3, N99.5=3
+  xi_jump: E1=97.99%, E12=99.18%, N95=1, N99=2, N99.5=3
+  xi_Lrho: E1=95.98%, E12=99.13%, N95=1, N99=2, N99.5=3
+
+Figure 9 uses the same xi_jump POD object as Figure 6:
+  E1=97.9855129903%
+  E1:2=99.1821790006%
+  E1:3=99.8648283653%
