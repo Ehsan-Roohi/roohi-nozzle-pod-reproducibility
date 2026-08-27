@@ -58,7 +58,12 @@ The first three individual shock-centered density-mode energies used in Figure 9
 
 ## Authorship and licensing
 
-Authorship and contribution information is recorded in [AUTHORS.md](AUTHORS.md). This public repository is a reproducibility record; no general open-source or open-data license is granted. See [LICENSE](LICENSE) and contact the corresponding author before redistribution or derivative use.
+Authorship and contribution information is recorded in [AUTHORS.md](AUTHORS.md).
+
+- Source code and documentation are open source under the [MIT License](LICENSE).
+- The bundled DSMC snapshots and verified reference outputs are open data under [CC BY 4.0](DATA_LICENSE.md).
+
+Reuse, modification, redistribution, and commercial use are permitted under those licenses. Please preserve the copyright notices, cite the associated manuscript and software release, and indicate changes to the data or reference outputs.
 
 ## Citation
 
