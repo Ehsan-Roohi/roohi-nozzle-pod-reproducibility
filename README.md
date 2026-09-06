@@ -2,7 +2,11 @@
 
 Reproducibility package for manuscript Figures 6 and 9 and the associated POD audit in **Shock-Centered Low-Rank Structure and Shock-Aligned Surrogate Modeling of Rarefied Micro-Nozzle Flows** by Ehsan Roohi and Amirmehran Mahdavi.
 
-The package resolves a provenance inconsistency in the earlier figures: the legacy plots used five pressure snapshots while later manuscript text referred to `N_s=15`. The primary workflow uses all 15 clean DSMC snapshots and applies the same per-case jump normalization in physical and shock-centered coordinates.
+The package resolves a provenance inconsistency in the earlier figures: the legacy plots used five pressure snapshots while later manuscript text referred to `N_s=15`. The primary workflow uses all 15 retained DSMC snapshots and applies the same per-case jump normalization in physical and shock-centered coordinates.
+
+Associated paper: [Physics of Fluids, DOI 10.1063/5.0343101](https://doi.org/10.1063/5.0343101); [earlier preprint](https://arxiv.org/abs/2605.12723).
+
+**Data status:** the [recovered original exports](data/original_exports/) now accompany the historical data. Both contain a nonzero exported transverse velocity on the stated symmetry row; the cause remains unresolved. These files support reproducing the retained analyses, not a claim of corrected or fully validated boundary data. See [DATA_STATUS.md](docs/DATA_STATUS.md).
 
 ## Contents
 
@@ -10,6 +14,8 @@ The package resolves a provenance inconsistency in the earlier figures: the lega
 - `src/audit_table_iv_ns15.py` — density, velocity, pressure, and Mach POD audit.
 - `src/4_*`, `src/5_*`, and `src/7_*` — recovered legacy and intermediate analysis workflows retained for provenance.
 - `data/` — 15 Tecplot ASCII pressure snapshots from 15 to 33 kPa.
+- `data/original_exports/` — byte-preserved original exports for the same fifteen cases, with a file-pair checksum manifest; recovered from the author's existing research archive, not newly simulated for the course.
+- `src/verify_original_exports.py` — read-only, all-field and all-zone verification against the historical snapshots.
 - `reference_outputs/` — verified figures and machine-readable tables from the reference run.
 - `docs/` — detailed Persian-language audit and proof-correction notes.
 

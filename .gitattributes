@@ -1,0 +1,5 @@
+# Preserve the recovered exports byte-for-byte, including their original CRLF.
+data/original_exports/**/*.PLT -text
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
