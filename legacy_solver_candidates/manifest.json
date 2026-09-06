@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "recovered_utc": "2026-09-06",
+  "status": "solver-family evidence; exact fifteen-case producing revision unresolved",
+  "archives": {
+    "nozzle.rar": {
+      "bytes": 22843,
+      "sha256": "6f58f95e9c1f6bdddf5a1119ecb78cdf5821f70fd582b05e4ff754d0aa9f4347",
+      "classification": "article-family POUT=25 kPa candidate"
+    },
+    "GHS_nozzle_modified_code.zip": {
+      "bytes": 28221,
+      "sha256": "43e1a74a99ce3fee0b9b4a0c4d4de70839dc13c03dcde0b6d728dbcdc5bde6fa",
+      "classification": "later 2026 GHS extension; not article producer"
+    },
+    "Pb=7-Tw=Tin=300.rar": {
+      "bytes": 74224069,
+      "sha256": "64e844958f13b5a3777733e4714ed18c91d3da77f9d8d76c8ef8d5484671447d",
+      "classification": "separate 7-kPa/300-K wall-heat-flux campaign; inventory only"
+    }
+  },
+  "retained_files_sha256": {
+    "ghs_2026/InputData.txt": "87791ee4d66ceb8a23120241fa33d8bbcc61d286151847dd340547a5076d5957",
+    "ghs_2026/Property.txt": "b1047ffca18010e17817c65add4d1ea11e196cff995863e38a578ee3024dd86e",
+    "ghs_2026/README_GHS_changes.txt": "c0eed00cee768988150bc68718902f75154521674201bdb1eb996b83784e4017",
+    "ghs_2026/Viscous_Nozzle_GHS.for": "8cbc617c8b4626fc1b1f12ad23b733b7580b922f2f74113722bc992231c1801b",
+    "ghs_2026/common.txt": "d2a04d3861c175a6f1eca265eacd96fb2f63640c10f86b476aa702a658d5c3a1",
+    "nozzle_2009/Inputdata.txt": "566a35a579240040df95bad0c6f3df1b119d3aeac61448ab311755010e6053b7",
+    "nozzle_2009/Property.txt": "6170195d62062b0dfc21edf72f27dae3aa8d0839594eec960896ca120787aabf",
+    "nozzle_2009/Viscous Nozzle.for": "299f861d635b96191fafbe21e68ff10a1a15715776befb3c6ef68b5eac6b58fa",
+    "nozzle_2009/common.txt": "240a777682cc32792ac3a0f44ed7c1a084a6c60142a6871055babfaca404e838"
+  },
+  "heat_flux_archive_fingerprints": {
+    "Viscous Nozzle.for": "ce0f3b65f35c0ba71cee2fa095bb8a532dce22e0f0d66372fbe2dbda784482fc",
+    "Viscous Nozzle.exe": "8101f6b8344baa18620491a874e28ac833370a00862b6f6405a0f7f46cc9cd59",
+    "executable_pe_timestamp_utc": "2018-11-09T20:22:44Z",
+    "executable_runtime_marker": "Compaq Fortran RTL V1.1-19",
+    "raw_restart_name": "DSMC2.RES",
+    "raw_restart_bytes": 88915116
+  }
+}

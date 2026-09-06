@@ -1,5 +1,7 @@
 # Preserve the recovered exports byte-for-byte, including their original CRLF.
 data/original_exports/**/*.PLT -text
+legacy_solver_candidates/**/*.for -text
+legacy_solver_candidates/**/*.txt -text
 *.py text eol=lf
 *.md text eol=lf
 *.json text eol=lf

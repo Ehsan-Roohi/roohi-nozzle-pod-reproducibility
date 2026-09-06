@@ -16,10 +16,21 @@ integration conventions. Their variation alone does not establish a solver
 conservation failure. Numerical agreement between two exports verifies lineage;
 it does not validate the underlying physical solution.
 
-The producing solver/exporter revision, input deck, raw accumulated moments and
-sampling record are still unresolved. An exporter defect is a hypothesis, not
-a proven diagnosis. Recovery of a similar nozzle source is not sufficient to
-attribute a specific defect to these runs.
+An author-supplied 2009 modified Bird-family source and matching 25-kPa input
+have now been recovered. They confirm the solver family, grid construction and
+meaning of the pressure labels, but their exported moment schema differs from
+the article files. The exact producing revision, fifteen matching inputs, raw
+accumulated moments and sampling record therefore remain unresolved. See the
+[legacy-source audit](LEGACY_SOLVER_RECOVERY.md).
+
+The original-to-full-domain transformation is now reconstructed numerically:
+the first two zones are translated by 92 micrometres and the two mirror zones
+share every non-`Y` variable unchanged. That specific transformation fails to
+reverse the odd components `QY`, `V` and `Txy`. Separately, the recovered source
+shows that its symmetry-plane nodal output is copied/averaged from the adjacent
+cell-centered samples rather than explicitly set to `V=0`. These findings
+identify export/post-processing defects, but they do not establish a particle-
+solver boundary-condition failure.
 
 ## Before any corrected-data claim
 

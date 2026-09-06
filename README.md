@@ -8,6 +8,14 @@ Associated paper: [Physics of Fluids, DOI 10.1063/5.0343101](https://doi.org/10.
 
 **Data status:** the [recovered original exports](data/original_exports/) now accompany the historical data. Both contain a nonzero exported transverse velocity on the stated symmetry row; the cause remains unresolved. These files support reproducing the retained analyses, not a claim of corrected or fully validated boundary data. See [DATA_STATUS.md](docs/DATA_STATUS.md).
 
+**Solver recovery:** an author-supplied 2009 modified Bird-family nozzle source
+and a later 2026 GHS extension are retained as
+[legacy solver candidates](legacy_solver_candidates/). The 2009 input confirms
+that `P=25` means a 25-kPa back pressure and reproduces the published zone
+dimensions, but its output-moment schema differs from the article exports. It is
+therefore not mislabeled as the exact producing revision. See the
+[recovery audit](docs/LEGACY_SOLVER_RECOVERY.md).
+
 ## Contents
 
 - `src/regenerate_figures_6_and_9_ns15.py` — primary all-15-snapshot workflow for Figures 6 and 9.
@@ -18,6 +26,9 @@ Associated paper: [Physics of Fluids, DOI 10.1063/5.0343101](https://doi.org/10.
 - `src/verify_original_exports.py` — read-only, all-field and all-zone verification against the historical snapshots.
 - `reference_outputs/` — verified figures and machine-readable tables from the reference run.
 - `docs/` — detailed Persian-language audit and proof-correction notes.
+- `legacy_solver_candidates/` — recovered Fortran/input candidates, hashes and
+  explicit provenance limits; these artifacts are outside the root MIT grant
+  pending separate source-license confirmation.
 
 ## Installation
 
