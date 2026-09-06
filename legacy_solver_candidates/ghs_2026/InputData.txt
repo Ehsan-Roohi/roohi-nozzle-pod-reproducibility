@@ -1,0 +1,81 @@
+13000	!NSM
+!MAIN
+100	!NCX
+30	!NCY
+!BUFFER
+30	!NBX
+40	!NBY
+2	!NSCX
+2	!NSCY
+0	!IFCX
+2.	!CWRX
+0	!IFCY
+2.	!CWRY
+1	!IIS
+1	!ISG
+300.	!FTMP
+1.E5	!PIN 
+7.E3	!POUT
+10.	!VFX
+0.	!VFY
+1.	!FSP(1)
+15.E11	!FNUM
+4.E-10	!DTM is the time step
+0.0	!CB(1)
+205.e-6	!CB(2)
+0.0	!CB(3)
+69.e-6	!CB(4)-outlet 
+15.e-6	!CB(5)the nozzle throat height 
+34.E-6	!CB(6)-INLET HEIGHT
+0.0	!CB(9)
+0	!INZ(1)
+25	!INZ(2)-Throat location 
+100	!INZ(3)
+1	!IB(1)
+1	!IB(2)
+2	!IB(3)
+2	!IB(4)
+2	!IB(5)
+1	!IB(6)
+1	!ISURF(1)
+0	!ISURF(2)
+3	!ISURF(3)
+1	!LIMS(1,1)
+1	!LIMS(1,2)-inz(1)+1
+100	!LIMS(1,3)=100
+0	!LIMS(2,1)
+0	!LIMS(2,2)
+0	!LIMS(2,3)
+300	!TSURF(1)
+300	!TSURF(2)
+300	!TSURF(3)
+0	!IJET
+4.17E-10	!SP(1,1) is the molecular diameter of species N
+273.		!SP(2,1) is the reference temperature
+0.74		!SP(3,1) is the viscosity-temperatire index
+1.0		!SP(4,1) is the reciprocal of the VSS scattering parameter
+4.65E-26	!SP(5,1) is the molecular mass of species N
+2	!IMOLMODEL: 1=VHS/VSS original, 2=GHS
+3.798E-10	!GHS_SIG sigma for N2 [m] from Hash, Moss & Hassan
+71.4	!GHS_EPSK epsilon/k for N2 [K]
+2.32842	!GHS_A1 for N2 GHS model
+6.54333	!GHS_A2 for N2 GHS model
+0.0280087	!GHS_W1 for N2 GHS model
+0.777166	!GHS_W2 for N2 GHS model
+2	!ISPR(1,1) is the number of degrees of freedom of species N
+5.	!SPR(1,1,1) is the constant in the polynomial for the rotational
+0	!ISPR(2,1) is 0,1 for constant, polynomial for collision number
+1	!ISP(1) relaxation collision number of species N in collision with species K
+2	!NIS is the number of time steps between samples
+10	!NSP is the number of samples between restart and output file updates
+30	!NPS is the number of updates to reach assumed steady flow
+200000	!NPTT is the number of file updates to STOP
+1	!ITypeQw 0 CWT 1 CWH 2 WTD
+0.0	!Qw1
+300.	!Tw1
+0.04	!QwRF
+1e4	!QwEPS
+300.	!TW Buffer
+0	!NTwES 
+50	!NSQ
+
